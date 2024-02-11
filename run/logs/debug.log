@@ -1,0 +1,811 @@
+[17:07:15] [main/DEBUG] [FML]: Instantiating coremod class FMLCorePlugin
+[17:07:15] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[17:07:15] [main/DEBUG] [FML]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[17:07:15] [main/DEBUG] [FML]: Enqueued coremod FMLCorePlugin
+[17:07:15] [main/DEBUG] [FML]: Instantiating coremod class FMLForgePlugin
+[17:07:15] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[17:07:15] [main/DEBUG] [FML]: Enqueued coremod FMLForgePlugin
+[17:07:15] [main/DEBUG] [FML]: All fundamental core mods are successfully located
+[17:07:15] [main/INFO] [FML]: Found a command line coremod : zone.rong.mixinbooter.MixinBooterPlugin
+[17:07:15] [main/DEBUG] [FML]: Instantiating coremod class MixinBooterPlugin
+[17:07:15] [main/TRACE] [FML]: coremod named MixinBooter is loading
+[17:07:15] [main/WARN] [FML]: The coremod zone.rong.mixinbooter.MixinBooterPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[17:07:15] [main/INFO] [FML]: Ignoring missing certificate for coremod MixinBooter (zone.rong.mixinbooter.MixinBooterPlugin), as this is probably a dev workspace
+[17:07:15] [main/INFO] [MixinBooter]: Initializing Mixins...
+[17:07:15] [main/DEBUG] [mixin]: Catching java.util.ServiceConfigurationError:org.spongepowered.asm.service.IMixinServiceBootstrap: Provider org.spongepowered.asm.service.modlauncher.MixinServiceModLauncherBootstrap not found initialising service
+java.util.ServiceConfigurationError: org.spongepowered.asm.service.IMixinServiceBootstrap: Provider org.spongepowered.asm.service.modlauncher.MixinServiceModLauncherBootstrap not found
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239) ~[?:1.8.0_402]
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:372) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$LazyIterator.access$700(ServiceLoader.java:323) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$LazyIterator$2.run(ServiceLoader.java:407) ~[?:1.8.0_402]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:409) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480) ~[?:1.8.0_402]
+	at org.spongepowered.asm.service.MixinService.runBootServices(MixinService.java:166) ~[MixinService.class:?]
+	at org.spongepowered.asm.service.MixinService.<init>(MixinService.java:143) ~[MixinService.class:?]
+	at org.spongepowered.asm.service.MixinService.getInstance(MixinService.java:184) ~[MixinService.class:?]
+	at org.spongepowered.asm.service.MixinService.getGlobalPropertyService(MixinService.java:268) ~[MixinService.class:?]
+	at org.spongepowered.asm.launch.GlobalProperties.getService(GlobalProperties.java:113) ~[GlobalProperties.class:?]
+	at org.spongepowered.asm.launch.GlobalProperties.put(GlobalProperties.java:142) ~[GlobalProperties.class:?]
+	at zone.rong.mixinbooter.MixinBooterPlugin.initialize(MixinBooterPlugin.java:97) ~[mixinbooter-8.6_mapped_stable_39-1.12.jar:?]
+	at zone.rong.mixinbooter.MixinBooterPlugin.<init>(MixinBooterPlugin.java:30) [mixinbooter-8.6_mapped_stable_39-1.12.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_402]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [?:1.8.0_402]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:1.8.0_402]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [?:1.8.0_402]
+	at java.lang.Class.newInstance(Class.java:442) [?:1.8.0_402]
+	at net.minecraftforge.fml.relauncher.CoreModManager.loadCoreMod(CoreModManager.java:594) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.relauncher.CoreModManager.handleLaunch(CoreModManager.java:263) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.setupHome(FMLLaunchHandler.java:107) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.setupClient(FMLLaunchHandler.java:81) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.configureForClientLaunch(FMLLaunchHandler.java:42) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.common.launcher.FMLTweaker.injectIntoClassLoader(FMLTweaker.java:141) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_402]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_402]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_402]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_402]
+	at net.minecraftforge.legacydev.Main.start(Main.java:91) [legacydev-0.2.4.1-fatjar.jar:0.2.4.1+0+fdc17ca]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.4.1-fatjar.jar:0.2.4.1+0+fdc17ca]
+[17:07:15] [main/DEBUG] [mixin]: MixinService [LaunchWrapper] was successfully booted in net.minecraft.launchwrapper.LaunchClassLoader@49e5f737
+[17:07:15] [main/DEBUG] [mixin]: Catching java.util.ServiceConfigurationError:org.spongepowered.asm.service.IMixinServiceBootstrap: Provider org.spongepowered.asm.service.modlauncher.MixinServiceModLauncherBootstrap not found initialising service
+java.util.ServiceConfigurationError: org.spongepowered.asm.service.IMixinServiceBootstrap: Provider org.spongepowered.asm.service.modlauncher.MixinServiceModLauncherBootstrap not found
+	at java.util.ServiceLoader.fail(ServiceLoader.java:239) ~[?:1.8.0_402]
+	at java.util.ServiceLoader.access$300(ServiceLoader.java:185) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:372) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$LazyIterator.access$700(ServiceLoader.java:323) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$LazyIterator$2.run(ServiceLoader.java:407) ~[?:1.8.0_402]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:409) ~[?:1.8.0_402]
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480) ~[?:1.8.0_402]
+	at org.spongepowered.asm.service.MixinService.runBootServices(MixinService.java:166) ~[mixinbooter-8.6_mapped_stable_39-1.12.jar:?]
+	at org.spongepowered.asm.service.MixinService.<init>(MixinService.java:143) ~[mixinbooter-8.6_mapped_stable_39-1.12.jar:?]
+	at org.spongepowered.asm.service.MixinService.getInstance(MixinService.java:184) [mixinbooter-8.6_mapped_stable_39-1.12.jar:?]
+	at org.spongepowered.asm.service.MixinService.getService(MixinService.java:198) [mixinbooter-8.6_mapped_stable_39-1.12.jar:?]
+	at org.spongepowered.asm.mixin.MixinEnvironment.<clinit>(MixinEnvironment.java:1036) [mixinbooter-8.6_mapped_stable_39-1.12.jar:?]
+	at org.spongepowered.asm.launch.MixinBootstrap.start(MixinBootstrap.java:160) [MixinBootstrap.class:?]
+	at org.spongepowered.asm.launch.MixinBootstrap.init(MixinBootstrap.java:128) [MixinBootstrap.class:?]
+	at zone.rong.mixinbooter.MixinBooterPlugin.<init>(MixinBooterPlugin.java:32) [mixinbooter-8.6_mapped_stable_39-1.12.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_402]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [?:1.8.0_402]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:1.8.0_402]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) [?:1.8.0_402]
+	at java.lang.Class.newInstance(Class.java:442) [?:1.8.0_402]
+	at net.minecraftforge.fml.relauncher.CoreModManager.loadCoreMod(CoreModManager.java:594) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.relauncher.CoreModManager.handleLaunch(CoreModManager.java:263) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.setupHome(FMLLaunchHandler.java:107) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.setupClient(FMLLaunchHandler.java:81) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.relauncher.FMLLaunchHandler.configureForClientLaunch(FMLLaunchHandler.java:42) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraftforge.fml.common.launcher.FMLTweaker.injectIntoClassLoader(FMLTweaker.java:141) [forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_402]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_402]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_402]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_402]
+	at net.minecraftforge.legacydev.Main.start(Main.java:91) [legacydev-0.2.4.1-fatjar.jar:0.2.4.1+0+fdc17ca]
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29) [legacydev-0.2.4.1-fatjar.jar:0.2.4.1+0+fdc17ca]
+[17:07:15] [main/DEBUG] [mixin]: MixinService [LaunchWrapper] was successfully booted in sun.misc.Launcher$AppClassLoader@18b4aac2
+[17:07:15] [main/DEBUG] [mixin]: FML platform agent will ignore coremod zone.rong.mixinbooter.MixinBooterPlugin specified on the command line
+[17:07:15] [main/INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar Service=LaunchWrapper Env=CLIENT
+[17:07:15] [main/INFO] [mixin]: Attempting to load Hot-Swap agent
+[17:07:15] [main/INFO] [mixin]: Attempting to load Fernflower decompiler (Threaded mode)
+[17:07:15] [main/INFO] [mixin]: Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
+[17:07:15] [main/DEBUG] [mixin]: Adding new mixin transformer proxy #1
+[17:07:15] [main/DEBUG] [mixin]: Initialising Mixin Platform Manager
+[17:07:15] [main/DEBUG] [mixin]: Adding mixin platform agents for container ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:15] [main/DEBUG] [mixin]: Instancing new MixinPlatformAgentFMLLegacy for ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:15] [main/DEBUG] [mixin]: mixinbooter-8.6_mapped_stable_39-1.12.jar has core plugin zone.rong.mixinbooter.MixinBooterPlugin. Skipping because it was already injected.
+[17:07:15] [main/DEBUG] [mixin]: MixinPlatformAgentFMLLegacy rejected container ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:15] [main/DEBUG] [mixin]: Instancing new MixinPlatformAgentLiteLoaderLegacy for ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:15] [main/DEBUG] [mixin]: MixinPlatformAgentLiteLoaderLegacy rejected container ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:15] [main/DEBUG] [mixin]: Instancing new MixinPlatformAgentDefault for ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:15] [main/DEBUG] [mixin]: MixinPlatformAgentDefault accepted container ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/charsets.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/access-bridge-64.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/cldrdata.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/dnsns.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/jaccess.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/localedata.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/nashorn.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/sunec.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/sunjce_provider.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/sunmscapi.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/sunpkcs11.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/zipfs.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/jce.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/jfr.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/jsse.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/management-agent.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/resources.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/rt.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/D:/Programming/MOds/BetterSurvival/build/classes/java/main/ for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/D:/Programming/MOds/BetterSurvival/build/resources/main/ for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/bookshelf-228525/2836960_mapped_stable_39-1.12/bookshelf-228525-2836960_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/caliper-266824/2810222_mapped_stable_39-1.12/caliper-266824-2810222_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/had-enough-items-557549/4571247_mapped_stable_39-1.12/had-enough-items-557549-4571247_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:15] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/the-one-probe-245211/2667280_mapped_stable_39-1.12/the-one-probe-245211-2667280_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/maven_downloader/de/oceanlabs/mcp/mcp_stable/39-1.12/mcp_stable-39-1.12.zip for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/minecraft_repo/versions/1.12.2/client-extra.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.12.2-14.23.5.2860_mapped_stable_39-1.12/forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.0.0/6ef160c3133a78de015830860197602ca1c855d3/java-objc-bridge-1.0.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/3a3d111be1be1b745edfa7d91678a12d7ed38709/guava-21.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j-core-mojang/51.2/63d216a9311cca6be337c1e458e587f99d382b84/icu4j-core-mojang-51.2.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.25/9834cdf236c22e84b946bba989e2f94ef5897c3c/authlib-1.5.25.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/1.3.9/eb8bb7b66fa0e2152b1b40b3856e82f7619439ee/patchy-1.3.9.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.10.22/bd0dccebdf3744c75f1ca20063f16e8f7d5e663f/realms-1.10.22.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.10.3/48fd510879dff266c3815947de66e3d4809f8668/text2speech-1.10.3.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.10.3/84a4b856389cc4f485275b1f63497a95a857a443/text2speech-1.10.3-natives-windows.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.3/ed62e9fc709ca0f2ff1a3220daa8b70a2870078e/akka-actor_2.11-2.3.3.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/io.github.kostaskougios/cloning/1.10.3/c356a3a8dc50ccb0f9f9c1f5146fdd15cdcdc625/cloning-1.10.3.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.9.Final/97860965d6a0a6b98e7f569f3f966727b8db75/netty-all-4.1.9.Final.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.1.0/9835253257524c1be7ab50c057aa2d418fb72082/fastutil-7.1.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.5.2/79846ba34cbd89e2422d74d53752f993dcc2ccaf/vecmath-1.5.2.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.4.0/cb208278274bf12ebdb56c61bd7407e6f774d65a/jna-4.4.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/platform/3.4.0/e3f70017be8100d3d6923f50b3d2ee17714e9c13/platform-3.4.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.12/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36/launchwrapper-1.12.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.minecraftforge/legacydev/0.2.4.1/fff5d5351f252b77d5aa93cbd866433dbbd6d459/legacydev-0.2.4.1-fatjar.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.3/cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a/jopt-simple-5.0.3.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.15.0/4a5aa7e55a29391c6f66e0b259d5189aa11e45d0/log4j-api-2.15.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.15.0/ba55c13d7ac2fd44df9cc8074455719a33f375b9/log4j-core-2.15.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4/maven-artifact-3.5.3.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.1.0/60eecb6f15abdb1c653ad80abaac6fe188b3feaa/plexus-utils-3.1.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.jline/jline/3.5.1/51800e9d7a13608894a5a28eed0f5c7fa2f300fb/jline-3.5.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.4-nightly-20150209/931074f46c795d2f7b30ed6395df5715cfd7675b/lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.4-nightly-20150209/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/lwjgl-platform-2.9.4-nightly-20150209.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.4-nightly-20150209/b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0/lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.4-nightly-20150209/bcab850f8f487c3f4c4dbabde778bb82bd1a40ed/lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.4-nightly-20150209/697517568c68e78ae0b4544145af031c81082dfe/lwjgl-2.9.4-nightly-20150209.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.4-nightly-20150209/d51a7c040a721d13efdfbd34f8b257b2df882ad0/lwjgl_util-2.9.4-nightly-20150209.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.0.1/11cfac598df9dc48bb9ed9357ed04212694b7808/objenesis-3.0.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/5.2/3354e11e2b34215f06dab629ab88e06aca477c19/asm-debug-all-5.2.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.2/820fbca7e524b530fdadc594c39d49a21ea0337e/scala-xml_2.11-1.0.2.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-library_2.11/1.0.2_mc/e517c53a7e9acd6b1668c5a35eccbaa3bab9aac/scala-continuations-library_2.11-1.0.2_mc.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-plugin_2.11.1/1.0.2_mc/f361a3283452c57fa30c1ee69448995de23c60f7/scala-continuations-plugin_2.11.1-1.0.2_mc.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors-migration_2.11/1.1.0/dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f/scala-actors-migration_2.11-1.1.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.11.1/56ea2e6c025e0821f28d73ca271218b8dd04926a/scala-compiler-2.11.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.1/e11da23da3eabab9f4777b9220e60d44c1aab6a/scala-library-2.11.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.1/6580347e61cc7f8e802941e7fde40fa83b8badeb/scala-reflect-2.11.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-swing_2.11/1.0.1/b1cdd92bd47b1e1837139c1c53020e86bb9112ae/scala-swing_2.11-1.0.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-xml_2.11/1.0.2/7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0/scala-xml_2.11-1.0.2.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/9ddf7b048a8d701be231c0f4f95fd986198fd2d8/oshi-core-1.1.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Program%20Files/JetBrains/IntelliJ%20IDEA%20Community%20Edition%202023.3.2/lib/idea_rt.jar for mixin tweaker
+[17:07:16] [main/DEBUG] [mixin]: Adding agents for Mixin Container ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:16] [main/DEBUG] [mixin]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)]
+[17:07:16] [main/DEBUG] [mixin]: Preparing mixins for MixinEnvironment[PREINIT]
+[17:07:16] [main/DEBUG] [mixin]: Creating FML remapper adapter: org.spongepowered.asm.bridge.RemapperAdapterFML
+[17:07:16] [main/INFO] [mixin]: Initialised Mixin FML Remapper Adapter with net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper@710b18a6
+[17:07:16] [main/INFO] [mixin]: Initialised Legacy FML Dev Remapper
+[17:07:16] [main/INFO] [mixin]: Compatibility level set to JAVA_8
+[17:07:16] [main/INFO] [MixinBooter]: Initializing MixinExtras...
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @ModifyExpressionValue with com.llamalad7.mixinextras.injector.ModifyExpressionValueInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @ModifyReceiver with com.llamalad7.mixinextras.injector.ModifyReceiverInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @ModifyReturnValue with com.llamalad7.mixinextras.injector.ModifyReturnValueInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @WrapOperation with com.llamalad7.mixinextras.injector.wrapoperation.WrapOperationInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @WrapWithCondition with com.llamalad7.mixinextras.injector.WrapWithConditionInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Registering new injector for @SugarWrapper with com.llamalad7.mixinextras.sugar.impl.SugarWrapperInjectionInfo
+[17:07:16] [main/DEBUG] [mixin]: Checking for additional mixins for MixinEnvironment[PREINIT]
+[17:07:16] [main/DEBUG] [FML]: Enqueued coremod MixinBooter
+[17:07:16] [main/DEBUG] [FML]: Discovering coremods
+[17:07:16] [main/INFO] [FML]: Searching D:\Programming\MOds\BetterSurvival\run\.\mods for mods
+[17:07:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[17:07:16] [main/INFO] [CoremodTweaker]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[17:07:16] [main/INFO] [CoremodTweaker]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[17:07:16] [main/INFO] [CoremodTweaker]: Injecting location in coremod zone.rong.mixinbooter.MixinBooterPlugin
+[17:07:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:07:16] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[17:07:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:07:16] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[17:07:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:07:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[17:07:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:07:16] [main/DEBUG] [FML]: Injecting coremod MixinBooter \{zone.rong.mixinbooter.MixinBooterPlugin\} class transformers
+[17:07:16] [main/DEBUG] [FML]: Injection complete
+[17:07:16] [main/DEBUG] [FML]: Running coremod plugin for MixinBooter \{zone.rong.mixinbooter.MixinBooterPlugin\}
+[17:07:16] [main/DEBUG] [FML]: Running coremod plugin MixinBooter
+[17:07:16] [main/DEBUG] [FML]: Coremod plugin class MixinBooterPlugin run successfully
+[17:07:16] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:07:16] [main/DEBUG] [FML]: Injecting coremod FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\} class transformers
+[17:07:16] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[17:07:17] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[17:07:17] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[17:07:17] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SoundEngineFixTransformer
+[17:07:17] [main/DEBUG] [FML]: Injection complete
+[17:07:17] [main/DEBUG] [FML]: Running coremod plugin for FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\}
+[17:07:17] [main/DEBUG] [FML]: Running coremod plugin FMLCorePlugin
+[17:07:17] [main/DEBUG] [FML]: Loading deobfuscation resource D:/Programming/MOds/BetterSurvival\build\createSrgToMcp\output.srg with 36076 records
+[17:07:19] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[17:07:19] [main/DEBUG] [FML]: Coremod plugin class FMLCorePlugin run successfully
+[17:07:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[17:07:19] [main/DEBUG] [FML]: Injecting coremod FMLForgePlugin \{net.minecraftforge.classloading.FMLForgePlugin\} class transformers
+[17:07:19] [main/DEBUG] [FML]: Injection complete
+[17:07:19] [main/DEBUG] [FML]: Running coremod plugin for FMLForgePlugin \{net.minecraftforge.classloading.FMLForgePlugin\}
+[17:07:19] [main/DEBUG] [FML]: Running coremod plugin FMLForgePlugin
+[17:07:19] [main/DEBUG] [FML]: Coremod plugin class FMLForgePlugin run successfully
+[17:07:19] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[17:07:19] [main/DEBUG] [mixin]: Processing launch tasks for PlatformAgent[MixinPlatformAgentDefault:ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)]
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/charsets.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/access-bridge-64.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/cldrdata.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/dnsns.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/jaccess.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/localedata.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/nashorn.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/sunec.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/sunjce_provider.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/sunmscapi.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/sunpkcs11.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/ext/zipfs.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/jce.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/jfr.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/jsse.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/management-agent.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/resources.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.jdks/temurin-1.8.0_402/jre/lib/rt.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/D:/Programming/MOds/BetterSurvival/build/classes/java/main/ for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/D:/Programming/MOds/BetterSurvival/build/resources/main/ for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/bookshelf-228525/2836960_mapped_stable_39-1.12/bookshelf-228525-2836960_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/caliper-266824/2810222_mapped_stable_39-1.12/caliper-266824-2810222_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/had-enough-items-557549/4571247_mapped_stable_39-1.12/had-enough-items-557549-4571247_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/the-one-probe-245211/2667280_mapped_stable_39-1.12/the-one-probe-245211-2667280_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/maven_downloader/de/oceanlabs/mcp/mcp_stable/39-1.12/mcp_stable-39-1.12.zip for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/minecraft_repo/versions/1.12.2/client-extra.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.12.2-14.23.5.2860_mapped_stable_39-1.12/forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.0.0/6ef160c3133a78de015830860197602ca1c855d3/java-objc-bridge-1.0.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.1/f7be08ec23c21485b9b5a1cf1654c2ec8c58168d/jsr305-3.0.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/3a3d111be1be1b745edfa7d91678a12d7ed38709/guava-21.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j-core-mojang/51.2/63d216a9311cca6be337c1e458e587f99d382b84/icu4j-core-mojang-51.2.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.25/9834cdf236c22e84b946bba989e2f94ef5897c3c/authlib-1.5.25.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/patchy/1.3.9/eb8bb7b66fa0e2152b1b40b3856e82f7619439ee/patchy-1.3.9.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.10.22/bd0dccebdf3744c75f1ca20063f16e8f7d5e663f/realms-1.10.22.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.10.3/48fd510879dff266c3815947de66e3d4809f8668/text2speech-1.10.3.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.10.3/84a4b856389cc4f485275b1f63497a95a857a443/text2speech-1.10.3-natives-windows.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.typesafe.akka/akka-actor_2.11/2.3.3/ed62e9fc709ca0f2ff1a3220daa8b70a2870078e/akka-actor_2.11-2.3.3.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.2.1/f771f71fdae3df231bcd54d5ca2d57f0bf93f467/config-1.2.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/io.github.kostaskougios/cloning/1.10.3/c356a3a8dc50ccb0f9f9c1f5146fdd15cdcdc625/cloning-1.10.3.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.9.Final/97860965d6a0a6b98e7f569f3f966727b8db75/netty-all-4.1.9.Final.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.1.0/9835253257524c1be7ab50c057aa2d418fb72082/fastutil-7.1.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.5.2/79846ba34cbd89e2422d74d53752f993dcc2ccaf/vecmath-1.5.2.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.4.0/cb208278274bf12ebdb56c61bd7407e6f774d65a/jna-4.4.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/platform/3.4.0/e3f70017be8100d3d6923f50b3d2ee17714e9c13/platform-3.4.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/53f9c919f34d2ca9de8c51fc4e1e8282029a9232/jinput-platform-2.0.5-natives-osx.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/7ff832a6eb9ab6a767f1ade2b548092d0fa64795/jinput-platform-2.0.5-natives-linux.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.12/111e7bea9c968cdb3d06ef4632bf7ff0824d0f36/launchwrapper-1.12.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.minecraftforge/legacydev/0.2.4.1/fff5d5351f252b77d5aa93cbd866433dbbd6d459/legacydev-0.2.4.1-fatjar.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.3/cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a/jopt-simple-5.0.3.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/3.0.3/42ccaf4761f0dfdfa805c9e340d99a755907e2dd/trove4j-3.0.3.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.5/6c6c702c89bfff3cd9e80b04d668c5e190d588c6/commons-lang3-3.5.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.15.0/4a5aa7e55a29391c6f66e0b259d5189aa11e45d0/log4j-api-2.15.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.15.0/ba55c13d7ac2fd44df9cc8074455719a33f375b9/log4j-core-2.15.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4/maven-artifact-3.5.3.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.1.0/60eecb6f15abdb1c653ad80abaac6fe188b3feaa/plexus-utils-3.1.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.jline/jline/3.5.1/51800e9d7a13608894a5a28eed0f5c7fa2f300fb/jline-3.5.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.4-nightly-20150209/931074f46c795d2f7b30ed6395df5715cfd7675b/lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.4-nightly-20150209/b04f3ee8f5e43fa3b162981b50bb72fe1acabb33/lwjgl-platform-2.9.4-nightly-20150209.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.4-nightly-20150209/b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0/lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl-platform/2.9.4-nightly-20150209/bcab850f8f487c3f4c4dbabde778bb82bd1a40ed/lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.4-nightly-20150209/697517568c68e78ae0b4544145af031c81082dfe/lwjgl-2.9.4-nightly-20150209.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.4-nightly-20150209/d51a7c040a721d13efdfbd34f8b257b2df882ad0/lwjgl_util-2.9.4-nightly-20150209.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.0.1/11cfac598df9dc48bb9ed9357ed04212694b7808/objenesis-3.0.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/5.2/3354e11e2b34215f06dab629ab88e06aca477c19/asm-debug-all-5.2.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-xml_2.11/1.0.2/820fbca7e524b530fdadc594c39d49a21ea0337e/scala-xml_2.11-1.0.2.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-library_2.11/1.0.2_mc/e517c53a7e9acd6b1668c5a35eccbaa3bab9aac/scala-continuations-library_2.11-1.0.2_mc.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang.plugins/scala-continuations-plugin_2.11.1/1.0.2_mc/f361a3283452c57fa30c1ee69448995de23c60f7/scala-continuations-plugin_2.11.1-1.0.2_mc.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors-migration_2.11/1.1.0/dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f/scala-actors-migration_2.11-1.1.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-actors/2.11.0/8ccfb6541de179bb1c4d45cf414acee069b7f78b/scala-actors-2.11.0.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-compiler/2.11.1/56ea2e6c025e0821f28d73ca271218b8dd04926a/scala-compiler-2.11.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.11.1/e11da23da3eabab9f4777b9220e60d44c1aab6a/scala-library-2.11.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-parser-combinators_2.11/1.0.1/f05d7345bf5a58924f2837c6c1f4d73a938e1ff0/scala-parser-combinators_2.11-1.0.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.11.1/6580347e61cc7f8e802941e7fde40fa83b8badeb/scala-reflect-2.11.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-swing_2.11/1.0.1/b1cdd92bd47b1e1837139c1c53020e86bb9112ae/scala-swing_2.11-1.0.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-xml_2.11/1.0.2/7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0/scala-xml_2.11-1.0.2.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Users/sreek/.gradle/caches/modules-2/files-2.1/oshi-project/oshi-core/1.1/9ddf7b048a8d701be231c0f4f95fd986198fd2d8/oshi-core-1.1.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning file:/C:/Program%20Files/JetBrains/IntelliJ%20IDEA%20Community%20Edition%202023.3.2/lib/idea_rt.jar for mixin tweaker
+[17:07:19] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Scanning asmgen:/ for mixin tweaker
+[17:07:19] [main/DEBUG] [mixin]: Adding agents for Mixin Container ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)
+[17:07:19] [main/DEBUG] [mixin]: inject() running with 1 agents
+[17:07:19] [main/DEBUG] [mixin]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ContainerHandleURI(file:/C:/Users/sreek/.gradle/caches/forge_gradle/deobf_dependencies/maven/modrinth/mixinbooter/8.6_mapped_stable_39-1.12/mixinbooter-8.6_mapped_stable_39-1.12.jar)]
+[17:07:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[17:07:19] [main/DEBUG] [FML]: Loaded 215 rules from AccessTransformer config file forge_at.cfg
+[17:07:19] [main/DEBUG] [FML]: Loaded 13 rules from AccessTransformer mod jar file C:\Users\sreek\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\had-enough-items-557549\4571247_mapped_stable_39-1.12\had-enough-items-557549-4571247_mapped_stable_39-1.12.jar!META-INF/jei_at.cfg
+
+[17:07:19] [main/DEBUG] [FML]: Loaded 50 rules from AccessTransformer mod jar file C:\Users\sreek\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\bookshelf-228525\2836960_mapped_stable_39-1.12\bookshelf-228525-2836960_mapped_stable_39-1.12.jar!META-INF/bookshelf_at.cfg
+
+[17:07:19] [main/DEBUG] [FML]: Loaded 3 rules from AccessTransformer mod jar file C:\Users\sreek\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\the-one-probe-245211\2667280_mapped_stable_39-1.12\the-one-probe-245211-2667280_mapped_stable_39-1.12.jar!META-INF/top_at.cfg
+
+[17:07:19] [main/DEBUG] [mixin]: Adding new mixin transformer proxy #2
+[17:07:19] [main/DEBUG] [FML]: Validating minecraft
+[17:07:19] [main/DEBUG] [mixin]: Preparing mixins for MixinEnvironment[INIT]
+[17:07:20] [main/DEBUG] [FML]: Minecraft validated, launching...
+[17:07:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[17:07:20] [main/DEBUG] [net.minecraftforge.gradle.GradleForgeHacks]: Reading CSV file: D:\Programming\MOds\BetterSurvival\build\extractMappings\fields.csv
+[17:07:20] [main/DEBUG] [net.minecraftforge.gradle.GradleForgeHacks]: Reading CSV file: D:\Programming\MOds\BetterSurvival\build\extractMappings\methods.csv
+[17:07:20] [main/INFO] [net.minecraftforge.gradle.GradleForgeHacks]: Remapping AccessTransformer rules...
+[17:07:20] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:07:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[17:07:20] [main/DEBUG] [mixin]: Adding new mixin transformer proxy #3
+[17:07:20] [main/DEBUG] [mixin]: Preparing mixins for MixinEnvironment[DEFAULT]
+[17:07:20] [main/DEBUG] [mixin]: Selecting config mixin.mixinbooter.init.json
+[17:07:20] [main/DEBUG] [mixin]: Remapping refMap mixins.mixinbooter.refmap.json using remapper chain
+[17:07:20] [main/DEBUG] [mixin]: Preparing mixin.mixinbooter.init.json (2)
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Found name transformer: net.minecraftforge.fml.common.asm.transformers.DeobfuscationTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Rebuilding transformer delegation list:
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Found name transformer: net.minecraftforge.fml.common.asm.transformers.DeobfuscationTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.fml.common.asm.transformers.PatchingTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Excluding: org.spongepowered.asm.mixin.transformer.Proxy
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    $wrapper.net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Excluding: $wrapper.net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    $wrapper.net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    $wrapper.net.minecraftforge.fml.common.asm.transformers.SoundEngineFixTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.fml.common.asm.transformers.DeobfuscationTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.fml.common.asm.transformers.AccessTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.fml.common.asm.transformers.ModAccessTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.fml.common.asm.transformers.ItemStackTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.fml.common.asm.transformers.ItemBlockTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.fml.common.asm.transformers.ItemBlockSpecialTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.fml.common.asm.transformers.PotionEffectTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Excluding: org.spongepowered.asm.mixin.transformer.Proxy
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Adding:    net.minecraftforge.gradle.GradleForgeHacks$AccessTransformerTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Excluding: net.minecraftforge.fml.common.asm.transformers.TerminalTransformer
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]:   Excluding: org.spongepowered.asm.mixin.transformer.Proxy
+[17:07:20] [main/DEBUG] [org.spongepowered.asm.service.mojang.MixinServiceLaunchWrapper]: Transformer delegation list created with 12 entries
+[17:07:20] [main/TRACE] [mixin]: Added class metadata for net/minecraft/crash/CrashReport to metadata cache
+[17:07:20] [main/DEBUG] [mixin.agent]: Mixin class zone.rong.mixinbooter.mixin.CrashReportMixin added to class loader
+[17:07:20] [main/TRACE] [mixin]: Added class metadata for net/minecraftforge/fml/common/LoadController to metadata cache
+[17:07:20] [main/DEBUG] [mixin.agent]: Mixin class zone.rong.mixinbooter.mixin.LoadControllerMixin added to class loader
+[17:07:20] [main/TRACE] [mixin]: Added class metadata for net/minecraftforge/fml/common/discovery/ASMDataTable$ASMData to metadata cache
+[17:07:20] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[17:07:22] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player140
+[17:07:27] [Client thread/DEBUG] [FML]: Creating vanilla freeze snapshot
+[17:07:27] [Client thread/DEBUG] [FML]: Vanilla freeze snapshot created
+[17:07:27] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[17:07:29] [Client thread/DEBUG] [FML]: Bar Finished: Loading Resource - LanguageManager took 0.003s
+[17:07:29] [Client thread/DEBUG] [mixin]: Mixing CrashReportMixin from mixin.mixinbooter.init.json into net.minecraft.crash.CrashReport
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/Throwable to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/util/HashSet to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/util/AbstractSet to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/util/AbstractCollection to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/util/Collection to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/Iterable to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/util/Set to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/io/Serializable to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/Cloneable to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/StackTraceElement to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/String to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/Class to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/reflect/Field to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/reflect/AccessibleObject to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/util/Iterator to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/transformer/ClassInfo to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for zone/rong/mixinbooter/MixinBooterPlugin to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for org/apache/logging/log4j/Logger to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/StringBuilder to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/AbstractStringBuilder to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/Appendable to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/CharSequence to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/extensibility/IMixinInfo to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/launch/platform/GlobalMixinContextQuery to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/ReflectiveOperationException to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/io/StringWriter to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/io/PrintWriter to metadata cache
+[17:07:29] [Client thread/DEBUG] [mixin]: RemapperAdapterFML is remapping method func_71498_d()Ljava/lang/String; for net/minecraft/crash/CrashReport
+[17:07:29] [Client thread/DEBUG] [mixin]: RemapperAdapterFML is remapping class net/minecraft/crash/CrashReport
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/io/Writer to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/OutOfMemoryError to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/VirtualMachineError to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/Error to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/StackOverflowError to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/NullPointerException to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/RuntimeException to metadata cache
+[17:07:29] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/Exception to metadata cache
+[17:07:29] [Client thread/DEBUG] [mixin]: mixin.mixinbooter.init.json:CrashReportMixin from mod unknown-owner->@Inject::afterStackTracePopulation(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Ljava/io/StringWriter;Ljava/io/PrintWriter;Ljava/lang/Throwable;)V does use it's CallbackInfoReturnable
+[17:07:29] [Client thread/INFO] [FML]: -- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_402, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 280674168 bytes (267 MB) / 542113792 bytes (517 MB) up to 1836580864 bytes (1751 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+MixinBooter (mixinbooter-8.6_mapped_stable_39-1.12.jar)
+  
+	GL info: ' Vendor: 'Intel' Version: '4.6.0 - Build 31.0.101.4575' Renderer: 'Intel(R) UHD Graphics'
+[17:07:29] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2860 Initialized
+[17:07:29] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[17:07:30] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[17:07:30] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[17:07:30] [Client thread/DEBUG] [FML]: File D:\Programming\MOds\BetterSurvival\run\config\injectedDependencies.json not found. No dependencies injected
+[17:07:30] [Client thread/DEBUG] [mixin]: Mixing LoadControllerMixin from mixin.mixinbooter.init.json into net.minecraftforge.fml.common.LoadController
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for net/minecraftforge/fml/common/LoaderState to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for net/minecraftforge/fml/common/discovery/ASMDataTable to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for net/minecraftforge/fml/common/discovery/ModCandidate to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for net/minecraftforge/fml/common/ModClassLoader to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for zone/rong/mixinbooter/ILateMixinLoader to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for java/util/List to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/Mixins to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for zone/rong/mixinbooter/fix/MixinFixer to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for zone/rong/mixinbooter/decorator/FMLContextQuery to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for net/minecraftforge/fml/common/Loader to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for net/minecraftforge/fml/common/ModContainer to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/transformer/Proxy to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/transformer/IMixinTransformer to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/reflect/Method to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/reflect/Executable to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/MixinEnvironment to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/extensibility/IMixinProcessor to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for org/spongepowered/asm/mixin/injection/callback/CallbackInfo to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for zone/rong/mixinbooter/MixinLoader to metadata cache
+[17:07:30] [Client thread/DEBUG] [mixin]: RemapperAdapterFML is remapping method distributeStateMessage(Lnet/minecraftforge/fml/common/LoaderState;[Ljava/lang/Object;)V for null
+[17:07:30] [Client thread/DEBUG] [mixin]: mixin.mixinbooter.init.json:LoadControllerMixin from mod unknown-owner->@Inject::beforeConstructing(Lnet/minecraftforge/fml/common/LoaderState;[Ljava/lang/Object;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[17:07:30] [Client thread/DEBUG] [mixin]: mixin.mixinbooter.init.json:LoadControllerMixin from mod unknown-owner->@Inject::beforeConstructing(Lnet/minecraftforge/fml/common/LoaderState;[Ljava/lang/Object;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[17:07:30] [Client thread/DEBUG] [mixin]: mixin.mixinbooter.init.json:LoadControllerMixin from mod unknown-owner->@Inject::beforeConstructing(Lnet/minecraftforge/fml/common/LoaderState;[Ljava/lang/Object;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/InstantiationException to metadata cache
+[17:07:30] [Client thread/TRACE] [mixin]: Added class metadata for java/lang/IllegalAccessException to metadata cache
+[17:07:30] [Client thread/DEBUG] [FML]: Building injected Mod Containers [zone.rong.mixinbooter.MixinBooterPlugin$Container, net.minecraftforge.fml.common.FMLContainer, net.minecraftforge.common.ForgeModContainer]
+[17:07:30] [Client thread/INFO] [MixinBooter]: Initializing MixinBooter's Mod Container.
+[17:07:31] [Client thread/DEBUG] [FML]: Attempting to load mods contained in the minecraft jar file and associated classes
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\charsets.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\access-bridge-64.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\cldrdata.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\dnsns.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\jaccess.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\localedata.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\nashorn.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\sunec.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\sunjce_provider.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\sunmscapi.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\sunpkcs11.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\ext\zipfs.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\jce.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\jfr.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\jsse.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\management-agent.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\resources.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.jdks\temurin-1.8.0_402\jre\lib\rt.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related directory at D:\Programming\MOds\BetterSurvival\build\classes\java\main, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related directory at D:\Programming\MOds\BetterSurvival\build\resources\main, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\bookshelf-228525\2836960_mapped_stable_39-1.12\bookshelf-228525-2836960_mapped_stable_39-1.12.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\caliper-266824\2810222_mapped_stable_39-1.12\caliper-266824-2810222_mapped_stable_39-1.12.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\had-enough-items-557549\4571247_mapped_stable_39-1.12\had-enough-items-557549-4571247_mapped_stable_39-1.12.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\the-one-probe-245211\2667280_mapped_stable_39-1.12\the-one-probe-245211-2667280_mapped_stable_39-1.12.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\forge_gradle\deobf_dependencies\maven\modrinth\mixinbooter\8.6_mapped_stable_39-1.12\mixinbooter-8.6_mapped_stable_39-1.12.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\forge_gradle\maven_downloader\de\oceanlabs\mcp\mcp_stable\39-1.12\mcp_stable-39-1.12.zip, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\forge_gradle\minecraft_repo\versions\1.12.2\client-extra.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.12.2-14.23.5.2860_mapped_stable_39-1.12\forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\ca.weblite\java-objc-bridge\1.0.0\6ef160c3133a78de015830860197602ca1c855d3\java-objc-bridge-1.0.0.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.1\f7be08ec23c21485b9b5a1cf1654c2ec8c58168d\jsr305-3.0.1.jar, examining for mod candidates
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\21.0\3a3d111be1be1b745edfa7d91678a12d7ed38709\guava-21.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.ibm.icu\icu4j-core-mojang\51.2\63d216a9311cca6be337c1e458e587f99d382b84\icu4j-core-mojang-51.2.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.mojang\authlib\1.5.25\9834cdf236c22e84b946bba989e2f94ef5897c3c\authlib-1.5.25.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.mojang\patchy\1.3.9\eb8bb7b66fa0e2152b1b40b3856e82f7619439ee\patchy-1.3.9.jar, examining for mod candidates
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.mojang\realms\1.10.22\bd0dccebdf3744c75f1ca20063f16e8f7d5e663f\realms-1.10.22.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\48fd510879dff266c3815947de66e3d4809f8668\text2speech-1.10.3.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.mojang\text2speech\1.10.3\84a4b856389cc4f485275b1f63497a95a857a443\text2speech-1.10.3-natives-windows.jar, examining for mod candidates
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.paulscode\codecjorbis\20101023\c73b5636faf089d9f00e8732a829577de25237ee\codecjorbis-20101023.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.paulscode\codecwav\20101023\12f031cfe88fef5c1dd36c563c0a3a69bd7261da\codecwav-20101023.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.paulscode\libraryjavasound\20101123\5c5e304366f75f9eaa2e8cca546a1fb6109348b3\libraryjavasound-20101123.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.paulscode\librarylwjglopenal\20100824\73e80d0794c39665aec3f62eee88ca91676674ef\librarylwjglopenal-20100824.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.paulscode\soundsystem\20120107\419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6\soundsystem-20120107.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.typesafe.akka\akka-actor_2.11\2.3.3\ed62e9fc709ca0f2ff1a3220daa8b70a2870078e\akka-actor_2.11-2.3.3.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\com.typesafe\config\1.2.1\f771f71fdae3df231bcd54d5ca2d57f0bf93f467\config-1.2.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.10\4b95f4897fa13f2cd904aee711aeafc0c5295cd8\commons-codec-1.10.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\commons-logging\commons-logging\1.1.3\f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f\commons-logging-1.1.3.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\io.github.kostaskougios\cloning\1.10.3\c356a3a8dc50ccb0f9f9c1f5146fdd15cdcdc625\cloning-1.10.3.jar, examining for mod candidates
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\io.netty\netty-all\4.1.9.Final\97860965d6a0a6b98e7f569f3f966727b8db75\netty-all-4.1.9.Final.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\it.unimi.dsi\fastutil\7.1.0\9835253257524c1be7ab50c057aa2d418fb72082\fastutil-7.1.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\java3d\vecmath\1.5.2\79846ba34cbd89e2422d74d53752f993dcc2ccaf\vecmath-1.5.2.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\lzma\lzma\0.0.1\521616dc7487b42bef0e803bd2fa3faf668101d7\lzma-0.0.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\jna\4.4.0\cb208278274bf12ebdb56c61bd7407e6f774d65a\jna-4.4.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.java.dev.jna\platform\3.4.0\e3f70017be8100d3d6923f50b3d2ee17714e9c13\platform-3.4.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\385ee093e01f587f30ee1c8a2ee7d408fd732e16\jinput-platform-2.0.5-natives-windows.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\53f9c919f34d2ca9de8c51fc4e1e8282029a9232\jinput-platform-2.0.5-natives-osx.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput-platform\2.0.5\7ff832a6eb9ab6a767f1ade2b548092d0fa64795\jinput-platform-2.0.5-natives-linux.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.java.jinput\jinput\2.0.5\39c7796b469a600f72380316f6b1f11db6c2c7c4\jinput-2.0.5.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.java.jutils\jutils\1.0.0\e12fe1fda814bd348c1579329c86943d2cd3c6a6\jutils-1.0.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.minecraft\launchwrapper\1.12\111e7bea9c968cdb3d06ef4632bf7ff0824d0f36\launchwrapper-1.12.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.minecraftforge\legacydev\0.2.4.1\fff5d5351f252b77d5aa93cbd866433dbbd6d459\legacydev-0.2.4.1-fatjar.jar, examining for mod candidates
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.sf.jopt-simple\jopt-simple\5.0.3\cdd846cfc4e0f7eefafc02c0f5dce32b9303aa2a\jopt-simple-5.0.3.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\net.sf.trove4j\trove4j\3.0.3\42ccaf4761f0dfdfa805c9e340d99a755907e2dd\trove4j-3.0.3.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.8.1\a698750c16740fd5b3871425f4cb3bbaa87f529d\commons-compress-1.8.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.5\6c6c702c89bfff3cd9e80b04d668c5e190d588c6\commons-lang3-3.5.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.3.3\18f4247ff4572a074444572cee34647c43e7c9c7\httpclient-4.3.3.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.3.2\31fbbff1ddbf98f3aa7377c94d33b0447c646b6e\httpcore-4.3.2.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.15.0\4a5aa7e55a29391c6f66e0b259d5189aa11e45d0\log4j-api-2.15.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-core\2.15.0\ba55c13d7ac2fd44df9cc8074455719a33f375b9\log4j-core-2.15.0.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.codehaus.plexus\plexus-utils\3.1.0\60eecb6f15abdb1c653ad80abaac6fe188b3feaa\plexus-utils-3.1.0.jar, examining for mod candidates
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.jline\jline\3.5.1\51800e9d7a13608894a5a28eed0f5c7fa2f300fb\jline-3.5.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\931074f46c795d2f7b30ed6395df5715cfd7675b\lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b04f3ee8f5e43fa3b162981b50bb72fe1acabb33\lwjgl-platform-2.9.4-nightly-20150209.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\b84d5102b9dbfabfeb5e43c7e2828d98a7fc80e0\lwjgl-platform-2.9.4-nightly-20150209-natives-windows.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl-platform\2.9.4-nightly-20150209\bcab850f8f487c3f4c4dbabde778bb82bd1a40ed\lwjgl-platform-2.9.4-nightly-20150209-natives-osx.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl\2.9.4-nightly-20150209\697517568c68e78ae0b4544145af031c81082dfe\lwjgl-2.9.4-nightly-20150209.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.lwjgl.lwjgl\lwjgl_util\2.9.4-nightly-20150209\d51a7c040a721d13efdfbd34f8b257b2df882ad0\lwjgl_util-2.9.4-nightly-20150209.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.objenesis\objenesis\3.0.1\11cfac598df9dc48bb9ed9357ed04212694b7808\objenesis-3.0.1.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-debug-all\5.2\3354e11e2b34215f06dab629ab88e06aca477c19\asm-debug-all-5.2.jar, examining for mod candidates
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang.modules\scala-xml_2.11\1.0.2\820fbca7e524b530fdadc594c39d49a21ea0337e\scala-xml_2.11-1.0.2.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-library_2.11\1.0.2_mc\e517c53a7e9acd6b1668c5a35eccbaa3bab9aac\scala-continuations-library_2.11-1.0.2_mc.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang.plugins\scala-continuations-plugin_2.11.1\1.0.2_mc\f361a3283452c57fa30c1ee69448995de23c60f7\scala-continuations-plugin_2.11.1-1.0.2_mc.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors-migration_2.11\1.1.0\dfa8bc42b181d5b9f1a5dd147f8ae308b893eb6f\scala-actors-migration_2.11-1.1.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-actors\2.11.0\8ccfb6541de179bb1c4d45cf414acee069b7f78b\scala-actors-2.11.0.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-compiler\2.11.1\56ea2e6c025e0821f28d73ca271218b8dd04926a\scala-compiler-2.11.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-parser-combinators_2.11\1.0.1\f05d7345bf5a58924f2837c6c1f4d73a938e1ff0\scala-parser-combinators_2.11-1.0.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-reflect\2.11.1\6580347e61cc7f8e802941e7fde40fa83b8badeb\scala-reflect-2.11.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-swing_2.11\1.0.1\b1cdd92bd47b1e1837139c1c53020e86bb9112ae\scala-swing_2.11-1.0.1.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-xml_2.11\1.0.2\7a80ec00aec122fba7cd4e0d4cdd87ff7e4cb6d0\scala-xml_2.11-1.0.2.jar
+[17:07:31] [Client thread/TRACE] [FML]: Skipping known library file C:\Users\sreek\.gradle\caches\modules-2\files-2.1\oshi-project\oshi-core\1.1\9ddf7b048a8d701be231c0f4f95fd986198fd2d8\oshi-core-1.1.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Found a minecraft related file at C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar, examining for mod candidates
+[17:07:31] [Client thread/DEBUG] [FML]: Minecraft jar mods loaded successfully
+[17:07:31] [Client thread/INFO] [FML]: Searching D:\Programming\MOds\BetterSurvival\run\.\mods for mods
+[17:07:31] [Client thread/DEBUG] [FML]: Examining directory main for potential mods
+[17:07:31] [Client thread/DEBUG] [FML]: No mcmod.info file found in directory main
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net/chubby
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net/chubby/bettersurvivalmod
+[17:07:31] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.chubby.bettersurvivalmod.BetterSurvivalMod) - loading
+[17:07:31] [Client thread/TRACE] [FML]: Parsed dependency info for bettersurvivalmod: Requirements: [] After:[] Before:[]
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net/chubby/bettersurvivalmod/com
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net/chubby/bettersurvivalmod/com/init
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net/chubby/bettersurvivalmod/com/items
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net/chubby/bettersurvivalmod/com/proxy
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net/chubby/bettersurvivalmod/com/util
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package net/chubby/bettersurvivalmod/com/util/handlers
+[17:07:31] [Client thread/DEBUG] [FML]: Examining directory main for potential mods
+[17:07:31] [Client thread/DEBUG] [FML]: Found an mcmod.info file in directory main
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package assets
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package assets/bettersurvivalmod
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package assets/bettersurvivalmod/lang
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package assets/bettersurvivalmod/models
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package assets/bettersurvivalmod/models/block
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package assets/bettersurvivalmod/models/item
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package assets/bettersurvivalmod/textures
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package assets/bettersurvivalmod/textures/items
+[17:07:31] [Client thread/TRACE] [FML]: Recursing into package META-INF
+[17:07:31] [Client thread/DEBUG] [FML]: Examining file bookshelf-228525-2836960_mapped_stable_39-1.12.jar for potential mods
+[17:07:31] [Client thread/TRACE] [FML]: Located mcmod.info file in file bookshelf-228525-2836960_mapped_stable_39-1.12.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.darkhax.bookshelf.Bookshelf) - loading
+[17:07:31] [Client thread/TRACE] [FML]: Parsed dependency info for bookshelf: Requirements: [] After:[] Before:[]
+[17:07:31] [Client thread/DEBUG] [FML]: Examining file caliper-266824-2810222_mapped_stable_39-1.12.jar for potential mods
+[17:07:31] [Client thread/TRACE] [FML]: Located mcmod.info file in file caliper-266824-2810222_mapped_stable_39-1.12.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (net.darkhax.caliper.Caliper) - loading
+[17:07:31] [Client thread/TRACE] [FML]: Parsed dependency info for caliper: Requirements: [bookshelf@[2.2.462,)] After:[bookshelf@[2.2.462,)] Before:[]
+[17:07:31] [Client thread/DEBUG] [FML]: Examining file had-enough-items-557549-4571247_mapped_stable_39-1.12.jar for potential mods
+[17:07:31] [Client thread/TRACE] [FML]: Located mcmod.info file in file had-enough-items-557549-4571247_mapped_stable_39-1.12.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (mezz.jei.JustEnoughItems) - loading
+[17:07:31] [Client thread/TRACE] [FML]: Parsed dependency info for jei: Requirements: [forge@[14.23.5.2816,)] After:[forge@[14.23.5.2816,)] Before:[]
+[17:07:31] [Client thread/DEBUG] [FML]: Examining file the-one-probe-245211-2667280_mapped_stable_39-1.12.jar for potential mods
+[17:07:31] [Client thread/TRACE] [FML]: Located mcmod.info file in file the-one-probe-245211-2667280_mapped_stable_39-1.12.jar
+[17:07:31] [Client thread/DEBUG] [FML]: Identified a mod of type Lnet/minecraftforge/fml/common/Mod; (mcjty.theoneprobe.TheOneProbe) - loading
+[17:07:31] [Client thread/TRACE] [FML]: Parsed dependency info for theoneprobe: Requirements: [] After:[forge@[13.19.0.2176,), tesla] Before:[]
+[17:07:31] [Client thread/DEBUG] [FML]: Examining file mixinbooter-8.6_mapped_stable_39-1.12.jar for potential mods
+[17:07:31] [Client thread/TRACE] [FML]: Located mcmod.info file in file mixinbooter-8.6_mapped_stable_39-1.12.jar
+[17:07:32] [Client thread/DEBUG] [FML]: Examining file mcp_stable-39-1.12.zip for potential mods
+[17:07:32] [Client thread/DEBUG] [FML]: The mod container mcp_stable-39-1.12.zip appears to be missing an mcmod.info file
+[17:07:32] [Client thread/DEBUG] [FML]: Examining file client-extra.jar for potential mods
+[17:07:32] [Client thread/DEBUG] [FML]: The mod container client-extra.jar appears to be missing an mcmod.info file
+[17:07:32] [Client thread/DEBUG] [FML]: Examining file forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar for potential mods
+[17:07:32] [Client thread/DEBUG] [FML]: The mod container forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar appears to be missing an mcmod.info file
+[17:07:32] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 138875700 nanos
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file java-objc-bridge-1.0.0.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container java-objc-bridge-1.0.0.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file jsr305-3.0.1.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container jsr305-3.0.1.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file patchy-1.3.9.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container patchy-1.3.9.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file text2speech-1.10.3.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container text2speech-1.10.3.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file text2speech-1.10.3-natives-windows.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container text2speech-1.10.3-natives-windows.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file cloning-1.10.3.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container cloning-1.10.3.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file legacydev-0.2.4.1-fatjar.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container legacydev-0.2.4.1-fatjar.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file maven-artifact-3.5.3.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container maven-artifact-3.5.3.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file plexus-utils-3.1.0.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container plexus-utils-3.1.0.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file objenesis-3.0.1.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container objenesis-3.0.1.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file asm-debug-all-5.2.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container asm-debug-all-5.2.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/DEBUG] [FML]: Examining file idea_rt.jar for potential mods
+[17:07:33] [Client thread/DEBUG] [FML]: The mod container idea_rt.jar appears to be missing an mcmod.info file
+[17:07:33] [Client thread/INFO] [FML]: Forge Mod Loader has identified 10 mods to load
+[17:07:33] [Client thread/DEBUG] [FML]: Found API mcjty.theoneprobe.api (owned by theoneprobe providing theoneprobe_api) embedded in theoneprobe
+[17:07:33] [Client thread/DEBUG] [FML]: Found API mezz.jei.api (owned by jei providing JustEnoughItemsAPI) embedded in jei
+[17:07:33] [Client thread/DEBUG] [FML]: Creating API container dummy for API JustEnoughItemsAPI: owner: jei, dependents: []
+[17:07:33] [Client thread/DEBUG] [FML]: Creating API container dummy for API theoneprobe_api: owner: theoneprobe, dependents: []
+[17:07:33] [Client thread/TRACE] [FML]: Received a system property request ''
+[17:07:33] [Client thread/TRACE] [FML]: System property request managing the state of 0 mods
+[17:07:33] [Client thread/DEBUG] [FML]: After merging, found state information for 0 mods
+[17:07:33] [Client thread/DEBUG] [FML]: Mod Forge Mod Loader is missing a pack.mcmeta file, substituting a dummy one
+[17:07:33] [Client thread/DEBUG] [FML]: Mod Minecraft Forge is missing a pack.mcmeta file, substituting a dummy one
+[17:07:33] [Client thread/DEBUG] [FML]: Enabling mod bettersurvivalmod
+[17:07:33] [Client thread/DEBUG] [FML]: Mod BetterSurvivalMod is missing a pack.mcmeta file, substituting a dummy one
+[17:07:33] [Client thread/DEBUG] [FML]: Enabling mod bookshelf
+[17:07:33] [Client thread/DEBUG] [FML]: Enabling mod caliper
+[17:07:33] [Client thread/DEBUG] [FML]: Mod Caliper is missing a pack.mcmeta file, substituting a dummy one
+[17:07:33] [Client thread/DEBUG] [FML]: Enabling mod jei
+[17:07:33] [Client thread/DEBUG] [FML]: Enabling mod theoneprobe
+[17:07:33] [Client thread/TRACE] [FML]: Verifying mod requirements are satisfied
+[17:07:33] [Client thread/TRACE] [FML]: All mod requirements are satisfied
+[17:07:33] [Client thread/TRACE] [FML]: Sorting mods into an ordered list
+[17:07:33] [Client thread/TRACE] [FML]: Mod sorting completed successfully
+[17:07:33] [Client thread/DEBUG] [FML]: Mod sorting data
+[17:07:33] [Client thread/DEBUG] [FML]: 	bettersurvivalmod(BetterSurvivalMod:0.0.1): main ()
+[17:07:33] [Client thread/DEBUG] [FML]: 	bookshelf(Bookshelf:2.3.590): bookshelf-228525-2836960_mapped_stable_39-1.12.jar ()
+[17:07:33] [Client thread/DEBUG] [FML]: 	caliper(Caliper:1.1.46): caliper-266824-2810222_mapped_stable_39-1.12.jar (required-after:bookshelf@[2.2.462,))
+[17:07:33] [Client thread/DEBUG] [FML]: 	jei(Had Enough Items:4.25.0): had-enough-items-557549-4571247_mapped_stable_39-1.12.jar (required-after:forge@[14.23.5.2816,);)
+[17:07:33] [Client thread/DEBUG] [FML]: 	theoneprobe(The One Probe:1.4.28): the-one-probe-245211-2667280_mapped_stable_39-1.12.jar (after:forge@[13.19.0.2176,);after:tesla)
+[17:07:33] [Client thread/DEBUG] [FML]: 	JustEnoughItemsAPI(API: JustEnoughItemsAPI:4.13.0): had-enough-items-557549-4571247_mapped_stable_39-1.12.jar ()
+[17:07:33] [Client thread/DEBUG] [FML]: 	theoneprobe_api(API: theoneprobe_api:1.4.4): the-one-probe-245211-2667280_mapped_stable_39-1.12.jar ()
+[17:07:33] [Client thread/DEBUG] [FML]: Loading @Config anotation data
+[17:07:33] [Client thread/INFO] [MixinBooter]: Instantiating all MixinLoader annotated classes...
+[17:07:33] [Client thread/INFO] [MixinBooter]: Instantiating all ILateMixinLoader implemented classes...
+[17:07:33] [Client thread/DEBUG] [mixin]: Ending MixinEnvironment[DEFAULT], applied 2 mixins
+[17:07:33] [Client thread/DEBUG] [mixin]: Checking for additional mixins for MixinEnvironment[DEFAULT]
+[17:07:33] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod minecraft
+[17:07:33] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod minecraft
+[17:07:33] [Client thread/DEBUG] [FML]: Bar Step: Construction - Minecraft took 0.005s
+[17:07:33] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod mcp
+[17:07:33] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod mcp
+[17:07:33] [Client thread/DEBUG] [FML]: Bar Step: Construction - Minecraft Coder Pack took 0.001s
+[17:07:33] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod mixinbooter
+[17:07:33] [Client thread/TRACE] [FML]: Sent event FMLConstructionEvent to mod mixinbooter
+[17:07:33] [Client thread/DEBUG] [FML]: Bar Step: Construction - MixinBooter took 0.003s
+[17:07:33] [Client thread/TRACE] [FML]: Sending event FMLConstructionEvent to mod FML
+[17:07:33] [Client thread/TRACE] [FML]: Mod FML is using network checker : Invoking method checkModLists
+[17:07:33] [Client thread/TRACE] [FML]: Testing mod FML to verify it accepts its own version in a remote connection
+[17:07:33] [Client thread/TRACE] [FML]: The mod FML accepts its own version (8.0.99.99)
+[17:07:33] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, mixinbooter, FML, forge, bettersurvivalmod, bookshelf, caliper, jei, theoneprobe] at CLIENT
+[17:07:33] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, mixinbooter, FML, forge, bettersurvivalmod, bookshelf, caliper, jei, theoneprobe] at SERVER
+[17:07:34] [Client thread/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:553]: ---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2/11/24 5:07 PM
+Description: There was a severe problem during mod loading that has caused the game to fail
+
+net.minecraftforge.fml.common.LoaderExceptionModCrash: Caught exception from Forge Mod Loader (FML)
+Caused by: java.lang.NullPointerException
+	at net.minecraftforge.fml.common.network.NetworkRegistry.newChannel(NetworkRegistry.java:207)
+	at net.minecraftforge.fml.common.network.internal.FMLNetworkHandler.registerChannel(FMLNetworkHandler.java:185)
+	at net.minecraftforge.fml.common.FMLContainer.modConstruction(FMLContainer.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:219)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:136)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:595)
+	at net.minecraftforge.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:232)
+	at net.minecraft.client.Minecraft.init(Minecraft.java:467)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:378)
+	at net.minecraft.client.main.Main.main(Main.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.legacydev.Main.start(Main.java:91)
+	at net.minecraftforge.legacydev.MainClient.main(MainClient.java:29)
+
+No Mixin Metadata is found in the Stacktrace.
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 1.8.0_402, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 190047936 bytes (181 MB) / 710934528 bytes (678 MB) up to 1836580864 bytes (1751 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 10 mods loaded, 10 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                | Version      | Source                                                    | Signature |
+	|:----- |:----------------- |:------------ |:--------------------------------------------------------- |:--------- |
+	| LC    | minecraft         | 1.12.2       | minecraft.jar                                             | None      |
+	| LC    | mcp               | 9.42         | minecraft.jar                                             | None      |
+	| LC    | mixinbooter       | 8.6          | minecraft.jar                                             | None      |
+	| LE    | FML               | 8.0.99.99    | forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar       | None      |
+	| L     | forge             | 14.23.5.2860 | forge-1.12.2-14.23.5.2860_mapped_stable_39-1.12.jar       | None      |
+	| L     | bettersurvivalmod | 0.0.1        | main                                                      | None      |
+	| L     | bookshelf         | 2.3.590      | bookshelf-228525-2836960_mapped_stable_39-1.12.jar        | None      |
+	| L     | caliper           | 1.1.46       | caliper-266824-2810222_mapped_stable_39-1.12.jar          | None      |
+	| L     | jei               | 4.25.0       | had-enough-items-557549-4571247_mapped_stable_39-1.12.jar | None      |
+	| L     | theoneprobe       | 1.4.28       | the-one-probe-245211-2667280_mapped_stable_39-1.12.jar    | None      |
+
+	Loaded coremods (and transformers): 
+MixinBooter (mixinbooter-8.6_mapped_stable_39-1.12.jar)
+  
+	GL info: ' Vendor: 'Intel' Version: '4.6.0 - Build 31.0.101.4575' Renderer: 'Intel(R) UHD Graphics'
+[17:07:34] [Client thread/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:553]: #@!@# Game crashed! Crash report saved to: #@!@# D:\Programming\MOds\BetterSurvival\run\.\crash-reports\crash-2024-02-11_17.07.34-client.txt

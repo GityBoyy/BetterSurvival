@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "bettersurvivalmod",
+    "name": "Better Survival",
+    "description": "Survive",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "modpage",
+    "authorList": [
+      "author1",
+      "author2"
+    ],
+    "credits": "FG6 Build template for 1.12.2 made by The_Computerizer",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": [
+      "mixinbooter"
+    ]
+  }
+]
